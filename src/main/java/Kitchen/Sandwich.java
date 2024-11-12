@@ -49,6 +49,19 @@ public class Sandwich implements IPricable {
 
     @Override
     public double calculatePrice(double size) {
-       double
+        String sandwichSize = getSandwichSize();
+        switch (sandwichSize){
+            case"4\"":
+                return 5.50;
+            case "8\"":
+                return 7.00;
+            case "12\"":
+                return 8.50;
+            default: System.err.println("Notice! size not reachable!");
+        }
+        return calculatePrice(size);
+
     }
+
+
 }

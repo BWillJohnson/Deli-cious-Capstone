@@ -16,4 +16,8 @@ public class Kiosk_UserInterface {
              System.out.println();
          }
     }
+    public void addSandwichRequest(){
+        System.out.println("Enter type of Bread: Italian, Wheat, White, ");
+    }
+    public void 
 }

@@ -37,7 +37,7 @@ public class Drinks implements IPricable {
             case "large" -> {
                 return 3.00;
             }
-            default -> System.err.println("Notice! Drink size not reachable!");
+            default -> System.err.println("Notice!  size not reachable!");
         }
        return calculatePrice(size);
     }

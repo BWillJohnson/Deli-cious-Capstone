@@ -21,9 +21,13 @@ public class Meats implements IPricable {
         String sandwichSize = sandwich.getSandwichSize();
         switch (sandwichSize){
             case"4\"":
-                return 
+                return 1.50;
+            case "8\"":
+                return 2.00;
+            case "12\"":
+                return 3.00;
+            default: System.err.println("Notice! size not reachable!");
         }
-        return 0;
-
+        return calculatePrice(size);
     }
 }

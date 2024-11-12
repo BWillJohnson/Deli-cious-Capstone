@@ -1,6 +1,6 @@
 package Kitchen;
 
-public class regularToppings extends toppings implements IPricable {
+public class regularToppings extends toppings{
     private String regToppings;
 
     public regularToppings(String regToppings) {
@@ -17,8 +17,5 @@ public class regularToppings extends toppings implements IPricable {
 
 
 
-    @Override
-    public int calculateSize(int size) {
-        return 0;
-    }
+
 }

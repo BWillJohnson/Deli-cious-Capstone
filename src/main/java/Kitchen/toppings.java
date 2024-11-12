@@ -6,5 +6,4 @@ public abstract class toppings implements IPricable {
 
         return size;
     }
-
 }

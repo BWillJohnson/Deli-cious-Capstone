@@ -5,20 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dcf96892-d9b0-4d31-825a-686b07dcce40" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/DeliciousMenu/Kiosk_UserInterface.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Kitchen/Cheeses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Kitchen/Cheeses.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Kitchen/Chips.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Kitchen/Chips.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Kitchen/Drinks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Kitchen/Drinks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Kitchen/ISizable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Kitchen/IPricable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Kitchen/Meats.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Kitchen/Meats.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Kitchen/Sandwich.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Kitchen/Sandwich.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Kitchen/premiumToppings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Kitchen/premiumToppings.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Kitchen/regularToppings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Kitchen/regularToppings.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Kitchen/sandwich.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Kitchen/Sandwich.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Kitchen/sauces.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Kitchen/sauces.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Kitchen/toppings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Kitchen/toppings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/DeliciousMenu/Kiosk_UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/DeliciousMenu/Kiosk_UserInterface.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/Kiosk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/Kiosk.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/img.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +56,26 @@
     <key name="CreateClassDialog.RecentsKey">
       <recent name="Kitchen" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Kiosk" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.pluralsight.Kiosk" />
+      <module name="Deli-cious-Sandwich-Shop" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.pluralsight.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Kiosk" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
