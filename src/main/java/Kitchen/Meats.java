@@ -1,6 +1,7 @@
 package Kitchen;
 
-public class Meats extends premiumToppings{
+public class Meats implements IPricable {
+    private Sandwich sandwich;
     private String premiumToppingMeats;
 
     public Meats(String premiumToppingMeats) {
@@ -16,8 +17,13 @@ public class Meats extends premiumToppings{
     }
 
     @Override
-    public int calculateSize(int size) {
-
+    public double calculatePrice(double size) {
+        String sandwichSize = sandwich.getSandwichSize();
+        switch (sandwichSize){
+            case"4\"":
+                return 
+        }
         return 0;
+
     }
 }

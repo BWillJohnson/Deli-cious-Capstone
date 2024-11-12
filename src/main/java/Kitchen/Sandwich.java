@@ -3,13 +3,13 @@ package Kitchen;
 import java.util.ArrayList;
 import java.util.List;
 
-public class sandwich implements ISizable {
+public class Sandwich implements IPricable {
     private String breadType;
     private String sandwichSize;
     private boolean isToasted;
     private List<toppings>toppings;
 
-    public sandwich(String breadType, String sandwichSize, boolean isToasted){
+    public Sandwich(String breadType, String sandwichSize, boolean isToasted){
         this.breadType = breadType;
         this.sandwichSize = sandwichSize;
         this.isToasted = false;
@@ -41,22 +41,14 @@ public class sandwich implements ISizable {
         }
     }
     public void addToppings(){
+
     }
    public void removeToppings(){
 
    }
 
     @Override
-    public String toString() {
-        return "sandwich{" +
-                "breadType='" + breadType + '\'' +
-                ", sandwichSize='" + sandwichSize + '\'' +
-                ", toppings=" + toppings +
-                '}';
-    }
-
-    @Override
-    public int calculateSize(int size) {
-        return 0;
+    public double calculatePrice(double size) {
+       double
     }
 }

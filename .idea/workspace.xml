@@ -5,14 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dcf96892-d9b0-4d31-825a-686b07dcce40" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/DeliciousMenu/Kiosk_UserInterface.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Kitchen/sandwich.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Kitchen/sandwich.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Kitchen/Cheeses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Kitchen/Cheeses.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Kitchen/Chips.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Kitchen/Chips.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Kitchen/Drinks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Kitchen/Drinks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Kitchen/ISizable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Kitchen/IPricable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Kitchen/Meats.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Kitchen/Meats.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Kitchen/premiumToppings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Kitchen/premiumToppings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Kitchen/regularToppings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Kitchen/regularToppings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Kitchen/sandwich.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Kitchen/Sandwich.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Kitchen/sauces.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Kitchen/sauces.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Kitchen/toppings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Kitchen/toppings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/Kiosk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/Kiosk.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

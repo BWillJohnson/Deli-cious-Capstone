@@ -1,10 +1,10 @@
 package Kitchen;
 
-public abstract class premiumToppings extends toppings implements ISizable {
+public abstract class premiumToppings extends toppings {
     private String premiumToppingsName;
 
     @Override
-    public int calculatePrice(int size) {
+    public double calculatePrice(double size) {
         return super.calculatePrice(size);
     }
 }

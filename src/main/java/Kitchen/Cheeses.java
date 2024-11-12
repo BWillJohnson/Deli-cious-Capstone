@@ -1,6 +1,6 @@
 package Kitchen;
 
-public class Cheeses extends premiumToppings implements ISizable {
+public class Cheeses extends premiumToppings implements IPricable {
     private String premiumToppingCheese;
 
     public Cheeses(String premiumToppingCheese) {

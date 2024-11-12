@@ -1,8 +1,8 @@
 package Kitchen;
 
-public abstract class toppings implements ISizable {
+public abstract class toppings implements IPricable {
     private String toppingName;
-    public int calculatePrice(int size){
+    public double calculatePrice(double size){
 
         return size;
     }

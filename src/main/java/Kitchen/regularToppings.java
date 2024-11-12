@@ -1,6 +1,6 @@
 package Kitchen;
 
-public class regularToppings extends toppings implements ISizable {
+public class regularToppings extends toppings implements IPricable {
     private String regToppings;
 
     public regularToppings(String regToppings) {

@@ -1,12 +1,12 @@
 package Kitchen;
 
-public class Drinks implements ISizable{
+public class Drinks implements IPricable {
     private String flavoredDrink;
-    private String size;
+    private String Size;
 
     public Drinks(String flavoredDrink, String size) {
         this.flavoredDrink = flavoredDrink;
-        this.size = size;
+        this.Size = size;
     }
 
     public String getFlavoredDrink() {
@@ -18,15 +18,27 @@ public class Drinks implements ISizable{
     }
 
     public String getSize() {
-        return size;
+        return Size;
     }
 
     public void setSize(String size) {
-        this.size = size;
+        Size = size;
     }
 
     @Override
-    public int calculateSize(int size) {
-        return 0;
+    public double calculatePrice(double size) {
+        switch (Size.toUpperCase()) {
+            case "small" -> {
+                return 2.00;
+            }
+            case "medium" -> {
+                return 2.50;
+            }
+            case "large" -> {
+                return 3.00;
+            }
+            default -> System.err.println("Notice! Drink size not reachable!");
+        }
+       return calculatePrice(size);
     }
 }

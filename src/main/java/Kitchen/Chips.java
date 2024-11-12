@@ -1,6 +1,6 @@
 package Kitchen;
 
-public class Chips implements ISizable{
+public class Chips implements IPricable {
     private String typeOfChips;
 
     public Chips(String typeOfChips) {
@@ -15,8 +15,9 @@ public class Chips implements ISizable{
         this.typeOfChips = typeOfChips;
     }
 
+
     @Override
-    public int calculateSize(int size) {
-        return 0;
+    public double calculatePrice(double size) {
+        return 1.50;
     }
 }
