@@ -1,6 +1,6 @@
 package Kitchen;
 
-public class sauces implements IPricable {
+public class sauces {
     private  String flavorSauce;
 
     public sauces(String flavorSauce) {
@@ -19,10 +19,5 @@ public class sauces implements IPricable {
     }
     public void removeSauce(){
 
-    }
-
-    @Override
-    public double calculatePrice(double size) {
-        return 0;
     }
 }

@@ -7,7 +7,7 @@ public class Sandwich implements IPricable {
     private String breadType;
     private String sandwichSize;
     private boolean isToasted;
-    private List<toppings>toppings;
+    private List<Toppings>toppings;
 
     public Sandwich(String breadType, String sandwichSize, boolean isToasted){
         this.breadType = breadType;
@@ -40,17 +40,27 @@ public class Sandwich implements IPricable {
             System.out.println("Ok i wont toast up your sandwich!");
         }
     }
+
+    public boolean isToasted() {
+        return isToasted;
+    }
+
+    public void setToasted(boolean toasted) {
+        isToasted = toasted;
+    }
+
     public void addToppings(){
 
-    }
-   public void removeToppings(){
 
+    }
+   public void removeToppings(Sandwich sandwich){
+        sandwich.removeToppings(sandwich);
    }
 
     @Override
     public double calculatePrice(double size) {
-        String sandwichSize = getSandwichSize();
-        switch (sandwichSize){
+        double basePrice = 0;
+        switch (size) {
             case"4\"":
                 return 5.50;
             case "8\"":
@@ -58,8 +68,9 @@ public class Sandwich implements IPricable {
             case "12\"":
                 return 8.50;
             default: System.err.println("Notice! size not reachable!");
-        }
-        return calculatePrice(size);
+        };
+        double toppingCost = toppings.stream().mapToDouble(Toppings::getPrice).sum();
+        return basePrice + toppingCost;
 
     }
 

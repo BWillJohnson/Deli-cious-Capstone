@@ -1,6 +1,6 @@
 package Kitchen;
 
-public class regularToppings extends toppings{
+public class regularToppings extends Toppings {
     private String regToppings;
 
     public regularToppings(String regToppings) {

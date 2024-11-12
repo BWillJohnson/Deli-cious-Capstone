@@ -1,12 +1,10 @@
 package Kitchen;
 
 public class Cheeses extends premiumToppings {
-    private Sandwich sandwich;
     private String premiumToppingCheese;
 
-
-    public Cheeses(String premiumToppingCheese) {
-        this.premiumToppingCheese = premiumToppingCheese;
+    public Cheeses(String toppingName, String category, double price) {
+        super(toppingName, category, price);
     }
 
     public String getPremiumToppingCheese() {
@@ -18,7 +16,7 @@ public class Cheeses extends premiumToppings {
     }
     @Override
     public double calculatePrice(double size) {
-        String cheeses = sandwich.getSandwichSize();
+        String cheeses;
         switch (cheeses) {
             case "4\"":
                 return 1.50;

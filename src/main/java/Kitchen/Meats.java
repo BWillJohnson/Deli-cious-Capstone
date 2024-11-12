@@ -1,11 +1,11 @@
 package Kitchen;
 
-public class Meats implements IPricable {
+public class Meats extends premiumToppings {
     private Sandwich sandwich;
     private String premiumToppingMeats;
 
-    public Meats(String premiumToppingMeats) {
-        this.premiumToppingMeats = premiumToppingMeats;
+    public Meats(String toppingName, String category, double price) {
+        super(toppingName, category, price);
     }
 
     public String getPremiumToppingMeats() {

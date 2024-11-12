@@ -7,14 +7,15 @@
     <list default="true" id="dcf96892-d9b0-4d31-825a-686b07dcce40" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Kitchen/Cheeses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Kitchen/Cheeses.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Kitchen/Drinks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Kitchen/Drinks.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Kitchen/Meats.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Kitchen/Meats.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Kitchen/Sandwich.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Kitchen/Sandwich.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Kitchen/premiumToppings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Kitchen/premiumToppings.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Kitchen/regularToppings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Kitchen/regularToppings.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Kitchen/toppings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Kitchen/toppings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Kitchen/sauces.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Kitchen/sauces.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Kitchen/toppings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Kitchen/Toppings.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/DeliciousMenu/Kiosk_UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/DeliciousMenu/Kiosk_UserInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/Kiosk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/Kiosk.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pluralsight/DeliciousMenu/Kiosk_UserInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pluralsight/DeliciousMenu/Kiosk_UserInterface.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pluralsight/Kiosk.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pluralsight/Kiosk.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
