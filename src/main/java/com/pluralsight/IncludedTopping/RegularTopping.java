@@ -1,18 +1,18 @@
 package com.pluralsight.IncludedTopping;
 
 public class RegularTopping extends Topping {
-    private String regToppings;
+    private String regTopping;
 
     public RegularTopping(String toppingName) {
         super(toppingName);
     }
 
-    public String getRegToppings() {
-        return regToppings;
+    public String getRegTopping() {
+        return regTopping;
     }
 
-    public void setRegToppings(String regToppings) {
-        this.regToppings = regToppings;
+    public void setRegTopping(String regTopping) {
+        this.regTopping = regTopping;
     }
 
     @Override

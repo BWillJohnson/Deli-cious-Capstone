@@ -55,7 +55,7 @@ public class Sandwich implements IPricable {
         isToasted = toasted;
     }
 
-    public void addToppings(Topping topping){
+    public void addTopping(String topping){
             toppings.add(topping);
             System.out.println(topping.getToppingName() + "Topping has been added to your sandwich!");
 
