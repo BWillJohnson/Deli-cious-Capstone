@@ -7,9 +7,9 @@ import com.pluralsight.PremiumTopping.Meat;
 import java.util.Scanner;
 
 public class KioskOrderingUI {
-    private Sandwich sandwich;
+    public static Sandwich sandwich;
 
-    private final Scanner myScan;
+    private static Scanner myScan;
     public KioskOrderingUI(){ myScan = new Scanner(System.in); }
 
     public void display(){
@@ -47,15 +47,96 @@ public class KioskOrderingUI {
         String toastOption = myScan.nextLine().toLowerCase().trim();
         boolean isToasted = toastOption.equals("yes");
 
-        Sandwich customersOrder = new Sandwich(breadType,sandwichSize,isToasted);git 
+        Sandwich customersOrder = new Sandwich(breadType,sandwichSize,isToasted);
 
-        boolean addTopping = false;
-        while (addTopping){
-            System.out.println("Interested in adding premium toppings? (Yes or No): ");
-            String response = myScan.nextLine().trim().toLowerCase();
+        boolean pickYourTaste = true;
+        while (pickYourTaste){
+            System.out.println("\n Choose an option: ");
+            System.out.println("0. add regular topping");
+            System.out.println("1. add a premium topping");
+            System.out.println("2. add a sauce");
+            System.out.println("3. Hi are you done finalizing your Order!");
+            System.out.println("Please enter your option (0-3) Thank you!: ");
+            int option = Integer.parseInt(myScan.nextLine());
 
+            switch (option){
+                case 0:
+                    addRegularTopping(sandwich);
+                    break;
+                case 1:
+                    addPremiumTopping(sandwich);
+                    break;
+                case 2:
+                   // addSauce(sandwich);
+                    break;
+                case 3:
+                    System.out.println("\nFinalizing your order. . . . .");
+                    System.out.println(sandwich.calculatePrice());
+                    pickYourTaste = false;
+                default:
+                    System.err.println("Notice Invalid option! Please enter a corresponding number!");
+                    break;
+            }
         }
 
+    }
+    public String addRegularTopping(Sandwich sandwich){
+
+            System.out.println("\nEnter regular topping name");
+            System.out.println("1. Lettuce");
+            System.out.println("2. Tomato");
+            System.out.println("3. Pickles");
+            System.out.println("4. Onions");
+            System.out.println("5. Mushrooms");
+            int choice = Integer.parseInt(myScan.nextLine());
+            String topping = "";
+        switch (choice) {
+            case 1 -> {
+                return "Lettuce";
+            }
+            case 2 -> {
+                return "Tomato";
+            }
+            case 3 -> {
+                return "Pickles";
+            }
+            case 4 -> {
+                return "Onions";
+            }
+            case 5 -> {
+                return "Mushrooms";
+            }
+            default -> System.err.println("Notice Invalid response");
+        }
+        return topping;
+    }
+    public String addPremiumTopping(Sandwich sandwich){
+        System.out.println("\n Enter a premium topping (e.g type meat)");
+        System.out.println("1. Steak");
+        System.out.println("2. Ham");
+        System.out.println("3. Salami");
+        System.out.println("4. Chicken");
+        System.out.println("X. Exit premiumTopping");
+
+        int option = Integer.parseInt(myScan.nextLine());
+
+        switch (option){
+            case 1 ->
+            {
+                return  "Steak";
+            }
+            case 2 -> {
+                return  "Ham";
+            }
+            case 3 -> {
+                return  "Salami";
+            }
+            case 4 -> {
+                return  "Chicken";
+            }
+            default -> System.err.println("Notice Premium meat not selected ");
+        }
+        
     }
     public void addDrinkRequest(){
 

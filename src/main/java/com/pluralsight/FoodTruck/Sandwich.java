@@ -90,4 +90,13 @@ public class Sandwich implements IPricable {
         }
         return String.format("TotalPrice: $%.2f",basePrice);
     }
+
+    @Override
+    public String toString() {
+        return "Sandwich{" +
+                "breadType='" + breadType + '\'' +
+                ", sandwichSize='" + sandwichSize + '\'' +
+                ", isToasted=" + isToasted +
+                '}';
+    }
 }

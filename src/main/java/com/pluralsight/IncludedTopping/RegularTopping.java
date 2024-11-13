@@ -3,8 +3,8 @@ package com.pluralsight.IncludedTopping;
 public class RegularTopping extends Topping {
     private String regToppings;
 
-    public RegularTopping(String toppingName, String category, double price) {
-        super(toppingName, category, price);
+    public RegularTopping(String toppingName) {
+        super(toppingName);
     }
 
     public String getRegToppings() {

@@ -7,11 +7,8 @@
     <list default="true" id="dcf96892-d9b0-4d31-825a-686b07dcce40" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/DeliKiosk/Machine/KioskOrderingUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/DeliKiosk/Machine/KioskOrderingUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/IncludedTopping/Sauce.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/IncludedTopping/Sauce.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/IncludedTopping/Topping.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/IncludedTopping/Topping.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/PremiumTopping/Cheese.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/PremiumTopping/Cheese.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/PremiumTopping/Meat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/PremiumTopping/Meat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/PremiumTopping/PremiumTopping.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/PremiumTopping/PremiumTopping.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/FoodTruck/Sandwich.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/FoodTruck/Sandwich.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/IncludedTopping/RegularTopping.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/IncludedTopping/RegularTopping.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +55,7 @@
       <recent name="C:\Users\Student\Desktop\Pluralsight\Capstones\DELI-CIOUS shop Capstone\Deli-cious-Sandwich-Shop\src\main\java\com\pluralsight\PremiumTopping" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.com.pluralsight.DeliKiosk.Machine.Kiosk">
     <configuration name="Kiosk" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.pluralsight.DeliKioskMachine.Kiosk" />
       <module name="Deli-cious-Sandwich-Shop" />
@@ -72,8 +69,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="com.pluralsight.DeliKiosk.Machine.Kiosk" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.pluralsight.DeliKiosk.Machine.Kiosk" />
+      <module name="Deli-cious-Sandwich-Shop" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.pluralsight.DeliKiosk.Machine.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.com.pluralsight.DeliKiosk.Machine.Kiosk" />
         <item itemvalue="Application.Kiosk" />
       </list>
     </recent_temporary>
