@@ -1,9 +1,9 @@
-package Kitchen;
+package com.pluralsight.PremiumTopping;
 
-public class Cheeses extends premiumToppings {
+public class Cheese extends PremiumTopping {
     private String premiumToppingCheese;
 
-    public Cheeses(String toppingName, String category, double price) {
+    public Cheese(String toppingName, String category, double price) {
         super(toppingName, category, price);
     }
 
@@ -14,19 +14,19 @@ public class Cheeses extends premiumToppings {
     public void setPremiumToppingCheese(String premiumToppingCheese) {
         this.premiumToppingCheese = premiumToppingCheese;
     }
+
     @Override
-    public double calculatePrice(double size) {
-        String cheeses;
-        switch (cheeses) {
+    public double calculatePrice(String size) {
+        switch (size) {
             case "4\"":
                 return 1.50;
             case "8\"":
                 return 2.00;
             case "12\"":
                 return 3.00;
-            default:System.err.println("Notice! size not reachable!");
+            default:
+                return 0;
         }
-        return super.calculatePrice(size);
     }
 
 }

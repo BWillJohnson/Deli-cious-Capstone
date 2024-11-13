@@ -1,4 +1,6 @@
-package Kitchen;
+package com.pluralsight.FoodTruck;
+
+import com.pluralsight.KioskInterface.IPricable;
 
 public class Chips implements IPricable {
     private String typeOfChips;
@@ -17,7 +19,7 @@ public class Chips implements IPricable {
 
 
     @Override
-    public double calculatePrice(double size) {
-        return 1.50;
+    public String calculatePrice() {
+        return String.valueOf(1.50);
     }
 }

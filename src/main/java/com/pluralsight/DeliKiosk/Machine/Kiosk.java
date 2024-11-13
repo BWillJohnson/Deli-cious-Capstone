@@ -1,12 +1,10 @@
-package com.pluralsight;
-
-import com.pluralsight.DeliciousMenu.Kiosk_UserInterface;
+package com.pluralsight.DeliKiosk.Machine;
 
 import java.util.Scanner;
 
 public class Kiosk {
     public static void main(String[] args) {
-        Kiosk_UserInterface Kiosk = new Kiosk_UserInterface();
+        KioskOrderingUI Kiosk = new KioskOrderingUI();
         Scanner scanner= new Scanner(System.in);
         boolean exit = false;
         while (!exit) {

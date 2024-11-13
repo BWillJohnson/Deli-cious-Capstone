@@ -5,17 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dcf96892-d9b0-4d31-825a-686b07dcce40" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/IncludedTopping/RegularTopping.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/KioskInterface/IPricable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/PremiumTopping/PremiumTopping.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Kitchen/Cheeses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Kitchen/Cheeses.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Kitchen/Meats.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Kitchen/Meats.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Kitchen/Sandwich.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Kitchen/Sandwich.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Kitchen/premiumToppings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Kitchen/premiumToppings.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Kitchen/regularToppings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Kitchen/regularToppings.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Kitchen/sauces.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Kitchen/sauces.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Kitchen/toppings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Kitchen/Toppings.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/DeliciousMenu/Kiosk_UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/DeliciousMenu/Kiosk_UserInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/pluralsight/DeliciousMenu/Kiosk_UserInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pluralsight/DeliciousMenu/Kiosk_UserInterface.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/pluralsight/Kiosk.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pluralsight/Kiosk.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Kitchen/Cheeses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/PremiumTopping/Cheese.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Kitchen/Chips.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/FoodTruck/Chips.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Kitchen/Drinks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/FoodTruck/Drink.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Kitchen/IPricable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Kitchen/Meats.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/PremiumTopping/Meat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Kitchen/Sandwich.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/FoodTruck/Sandwich.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Kitchen/Toppings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/IncludedTopping/Topping.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Kitchen/premiumToppings.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Kitchen/regularToppings.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Kitchen/sauces.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/IncludedTopping/Sauce.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/DeliciousMenu/Kiosk_UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/DeliKiosk/Machine/Kiosk_UserInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/Kiosk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/DeliKiosk/Machine/Kiosk.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,21 +55,25 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true"
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/Users/Student/Desktop/Pluralsight/Capstones/DELI-CIOUS shop Capstone/Deli-cious-Sandwich-Shop/src/main/java/com/pluralsight/PremiumTopping"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="Kitchen" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Student\Desktop\Pluralsight\Capstones\DELI-CIOUS shop Capstone\Deli-cious-Sandwich-Shop\src\main\java\com\pluralsight\PremiumTopping" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="Kiosk" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.pluralsight.Kiosk" />
+      <option name="MAIN_CLASS_NAME" value="com.pluralsight.DeliKioskMachine.Kiosk" />
       <module name="Deli-cious-Sandwich-Shop" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.pluralsight.*" />
+          <option name="PATTERN" value="Interface.Usage.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>

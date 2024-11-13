@@ -1,15 +1,16 @@
-package Kitchen;
+package com.pluralsight.IncludedTopping;
 
-public abstract class Toppings {
+public abstract class Topping {
     private String toppingName;
     private String category; // premium or regular
     private double price;
 
-    public Toppings(String toppingName, String category, double price) {
+    public Topping(String toppingName, String category, double price) {
         this.toppingName = toppingName;
         this.category = category;
         this.price = price;
     }
+
 
     public String getToppingName() {
         return toppingName;
@@ -35,8 +36,5 @@ public abstract class Toppings {
         this.price = price;
     }
 
-    public double calculatePrice(double size){
-
-        return size;
-    }
+    public abstract double calculatePrice(String size);
 }

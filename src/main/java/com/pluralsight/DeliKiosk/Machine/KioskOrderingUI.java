@@ -1,14 +1,14 @@
-package com.pluralsight.DeliciousMenu;
+package com.pluralsight.DeliKiosk.Machine;
 
-import Kitchen.Sandwich;
+import com.pluralsight.FoodTruck.Sandwich;
 
 import java.util.Scanner;
 
-public class Kiosk_UserInterface {
+public class KioskOrderingUI {
     private Sandwich sandwich;
 
     private final Scanner myScan;
-    public Kiosk_UserInterface(){ myScan = new Scanner(System.in); }
+    public KioskOrderingUI(){ myScan = new Scanner(System.in); }
 
     public void display(){
          boolean logOut = false;
@@ -34,6 +34,10 @@ public class Kiosk_UserInterface {
          }
     }
     public void addSandwichRequest(){
+        System.out.println("--Customize your Deli-Cious Sandwich!");
+        System.out.println("Enter your type of bread! {e.g [Wheat,White, Honey Wheat, Rye, Wrap]}");
+        String breadType = myScan.nextLine();
+
 
     }
     public void addDrinkRequest(){
