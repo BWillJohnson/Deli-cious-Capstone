@@ -5,10 +5,8 @@ public abstract class Topping {
     private String category; // premium or regular
     private double price;
 
-    public Topping(String toppingName, String category, double price) {
+    public Topping(String toppingName) {
         this.toppingName = toppingName;
-        this.category = category;
-        this.price = price;
     }
 
 

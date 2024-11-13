@@ -3,8 +3,8 @@ package com.pluralsight.PremiumTopping;
 public class Cheese extends PremiumTopping {
     private String premiumToppingCheese;
 
-    public Cheese(String toppingName, String category, double price) {
-        super(toppingName, category, price);
+    public Cheese(String toppingName) {
+        super(toppingName);
     }
 
     public String getPremiumToppingCheese() {

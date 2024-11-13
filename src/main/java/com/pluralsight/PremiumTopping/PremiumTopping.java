@@ -6,7 +6,7 @@ public abstract class PremiumTopping extends Topping {
     private String premiumToppingsName;
 
 
-    public PremiumTopping(String toppingName, String category, double price) {
-        super(toppingName, category, price);
+    public PremiumTopping(String toppingName) {
+        super(toppingName);
     }
 }

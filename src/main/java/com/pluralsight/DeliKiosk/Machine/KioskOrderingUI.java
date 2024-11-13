@@ -1,6 +1,8 @@
 package com.pluralsight.DeliKiosk.Machine;
 
 import com.pluralsight.FoodTruck.Sandwich;
+import com.pluralsight.IncludedTopping.Sauce;
+import com.pluralsight.PremiumTopping.Meat;
 
 import java.util.Scanner;
 
@@ -34,8 +36,7 @@ public class KioskOrderingUI {
          }
     }
     public void addSandwichRequest(){
-        System.out.println("--Customize your Deli-Cious Sandwich!");
-        System.out.println("=========================================");
+
         System.out.println("Enter your type of bread! {e.g [Wheat,White, Honey Wheat, Rye, Wrap]}");
         String breadType = myScan.nextLine();
 
@@ -46,18 +47,13 @@ public class KioskOrderingUI {
         String toastOption = myScan.nextLine().toLowerCase().trim();
         boolean isToasted = toastOption.equals("yes");
 
-        Sandwich customersSandwich = new Sandwich(breadType,sandwichSize,isToasted);
+        Sandwich customersOrder = new Sandwich(breadType,sandwichSize,isToasted);git 
 
         boolean addTopping = false;
         while (addTopping){
             System.out.println("Interested in adding premium toppings? (Yes or No): ");
             String response = myScan.nextLine().trim().toLowerCase();
-            if (response.equals("yes")){
-                System.out.println("Great Enter meatType premium topping name (e.g Steak, Chicken, Ham, Salami, Roast Beef): ");
-                String uniqueTopping= myScan.nextLine().toLowerCase().trim();
 
-                System.out.println();
-            }
         }
 
     }
