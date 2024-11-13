@@ -35,9 +35,30 @@ public class KioskOrderingUI {
     }
     public void addSandwichRequest(){
         System.out.println("--Customize your Deli-Cious Sandwich!");
+        System.out.println("=========================================");
         System.out.println("Enter your type of bread! {e.g [Wheat,White, Honey Wheat, Rye, Wrap]}");
         String breadType = myScan.nextLine();
 
+        System.out.println("Enter you sandwich Size(4\",8\",12\"): ");
+        String sandwichSize = myScan.nextLine();
+
+        System.out.println("Would you like your bread to be Toasted? (Yes or NO)");
+        String toastOption = myScan.nextLine().toLowerCase().trim();
+        boolean isToasted = toastOption.equals("yes");
+
+        Sandwich customersSandwich = new Sandwich(breadType,sandwichSize,isToasted);
+
+        boolean addTopping = false;
+        while (addTopping){
+            System.out.println("Interested in adding premium toppings? (Yes or No): ");
+            String response = myScan.nextLine().trim().toLowerCase();
+            if (response.equals("yes")){
+                System.out.println("Great Enter meatType premium topping name (e.g Steak, Chicken, Ham, Salami, Roast Beef): ");
+                String uniqueTopping= myScan.nextLine().toLowerCase().trim();
+
+                System.out.println();
+            }
+        }
 
     }
     public void addDrinkRequest(){
