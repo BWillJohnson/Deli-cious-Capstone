@@ -7,9 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Sandwich implements IPricable {
-    private static final double SMALL_SIZE_PRICE = 5.50;
-    private static final double MEDIUM_SIZE_PRICE = 7.00;
-    private static final double LARGE_SIZE_PRICE = 8.50;
+
 
 
     private String breadType;

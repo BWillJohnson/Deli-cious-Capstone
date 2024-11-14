@@ -29,4 +29,8 @@ public class Cheese extends PremiumTopping {
         }
     }
 
+    @Override
+    public String toString() {
+        return getPremiumToppingCheese();
+    }
 }
