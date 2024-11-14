@@ -3,20 +3,22 @@ package com.pluralsight.FoodTruck;
 import com.pluralsight.KioskInterface.IPricable;
 
 public class Drink implements IPricable {
-    private String flavoredDrink;
+    private static final double SMALL_SIZE_PRICE = 2.00;
+    private static final double MEDIUM_SIZE_PRICE = 2.50;
+    private static final double LARGE_SIZE_PRICE = 3.00;
+    private String drinkName;
     private String size;
 
-    public Drink(String flavoredDrink, String size) {
-        this.flavoredDrink = flavoredDrink;
-        this.size = size;
+    public Drink(String drinkName) {
+        this.drinkName = drinkName;
     }
 
-    public String getFlavoredDrink() {
-        return flavoredDrink;
+    public String getDrinkName() {
+        return drinkName;
     }
 
-    public void setFlavoredDrink(String flavoredDrink) {
-        this.flavoredDrink = flavoredDrink;
+    public void setDrinkName(String drinkName) {
+        this.drinkName = drinkName;
     }
 
     public String getSize() {
@@ -27,17 +29,35 @@ public class Drink implements IPricable {
         this.size = size;
     }
 
+    public void addDrink(Drink drink){
+        if (drink != null){
+            drink.addDrink(drink);
+            System.out.println(drink.getDrinkName() + "Slurp Your drink has been added!");
+        }else {
+            System.err.println("Invalid Drink Come On");
+        }
+    }
+    public boolean removeDrink(Drink drink){
+        if (drink.removeDrink(drink)){
+            System.out.println(drink.getDrinkName() + "Hey your drink has been removed");
+        return true;
+        }else {
+            System.err.println("No Drink has been found in your order.");
+        return false;
+        }
+    }
+
     @Override
     public String calculatePrice() {
         switch (this.size.toLowerCase()) {
             case "small" -> {
-                return String.valueOf(2.00);
+                return String.valueOf(SMALL_SIZE_PRICE);
             }
             case "medium" -> {
-                return String.valueOf(2.50);
+                return String.valueOf(MEDIUM_SIZE_PRICE);
             }
             case "large" -> {
-                return  String.valueOf(3.00);
+                return  String.valueOf(LARGE_SIZE_PRICE);
             }
             default -> {
                 return String.valueOf(0);
