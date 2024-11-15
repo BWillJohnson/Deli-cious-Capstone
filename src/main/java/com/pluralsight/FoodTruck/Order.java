@@ -39,6 +39,6 @@ public class Order implements IPricable {
 
     @Override
     public double calculatePrice() {
-        return Double.parseDouble(null);
+        return 0;
     }
 }

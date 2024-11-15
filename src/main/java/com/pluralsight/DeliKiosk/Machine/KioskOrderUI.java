@@ -38,7 +38,7 @@ public class KioskOrderUI {
                     addSandwichRequest(currentOrder);
                     break;
                 case 2:
-                   // addDrinkRequest();
+                   //addDrinkRequest();
                     break;
                 case 3:
                     addChips(currentOrder);
@@ -92,7 +92,7 @@ public class KioskOrderUI {
                 case 2 -> addSauce(customersSandwich);
                 case 3 -> {
                     System.out.println("\nFinalizing your order. . . . .");
-                    System.out.println("The Total price: " + currentOrder.calculatePrice());
+                    deliCheckOut(currentOrder);
                     exit = true;
                 }
                 case 4 -> exit = true;
@@ -337,7 +337,7 @@ public class KioskOrderUI {
                     //
                     System.out.println("You chose Popcorn");
                 }
-                case 6 -> {
+                case 0 -> {
                     found = true;
                     System.out.println("Heading back to option menu");
                 }

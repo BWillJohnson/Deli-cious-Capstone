@@ -60,7 +60,7 @@ public class Drink implements IPricable {
                 return Double.parseDouble(String.valueOf(LARGE_SIZE_PRICE));
             }
             default -> {
-                return Double.parseDouble(String.valueOf(0));
+                return 0;
             }
         }
 

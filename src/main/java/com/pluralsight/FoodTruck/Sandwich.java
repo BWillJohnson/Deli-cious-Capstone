@@ -7,13 +7,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Sandwich implements IPricable {
-
-
-
     private String breadType;
     private String sandwichSize;
     private boolean isToasted;
-    private List<Topping> toppings;
+    private final List<Topping> toppings;
 
 
     public Sandwich(String breadType, String sandwichSize, boolean isToasted) {
@@ -73,30 +70,6 @@ public class Sandwich implements IPricable {
         }
     }
 
-    @Override
-    public double calculatePrice() {
-        double basePrice = 0.00;
-        if ("4\"".equals(sandwichSize)) {
-            basePrice += 5.50;
-            System.out.println("Bread size has been confirmed $" + basePrice);
-        } else if ("8\"".equals(sandwichSize)) {
-            basePrice += 7.00;
-            System.out.println("Bread size has been confirmed $" + basePrice);
-        } else if ("12\"".equals(sandwichSize)) {
-            basePrice += 8.50;
-            System.out.println("Bread size has been confirmed $" + basePrice);
-        } else {
-            System.err.println("Invalid sandwich size");
-        }
-        for (Topping topping : toppings) {
-            basePrice += topping.getPrice();
-        }
-        if (isToasted) {
-            basePrice += 0.00;
-        }
-        return Double.parseDouble(String.format("TotalPrice: $%.2f", basePrice));
-    }
-
     public void addSauce(Topping sauce) {
         if (sauce != null) {
             toppings.add(sauce);
@@ -126,5 +99,10 @@ public class Sandwich implements IPricable {
                 ", isToasted=" + isToasted +
                 ", toppings=" + toppings +
                 '}';
+    }
+
+    @Override
+    public double calculatePrice() {
+        return 0;
     }
 }

@@ -6,17 +6,15 @@
   <component name="ChangeListManager">
     <list default="true" id="dcf96892-d9b0-4d31-825a-686b07dcce40" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/DeliKiosk/Machine/Kiosk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/DeliKiosk/Machine/Kiosk.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/DeliKiosk/Machine/KioskOrderingUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/DeliKiosk/Machine/KioskOrderUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/DeliKiosk/Machine/KioskOrderUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/DeliKiosk/Machine/KioskOrderUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/FoodTruck/Chips.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/FoodTruck/Chips.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/FoodTruck/Drink.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/FoodTruck/Drink.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/FoodTruck/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/FoodTruck/Order.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/FoodTruck/Sandwich.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/FoodTruck/Sandwich.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/KioskInterface/IPricable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/KioskInterface/IPricable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/PremiumTopping/Cheese.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/PremiumTopping/Cheese.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/RecieptManager/ReceiptFileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/RecieptManager/ReceiptFileManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/pluralsight/DeliKiosk/Machine/Kiosk.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pluralsight/DeliKiosk/Machine/Kiosk.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/pluralsight/FoodTruck/Chips.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pluralsight/FoodTruck/Chips.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/pluralsight/RecieptManager/RecieptFileManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pluralsight/PremiumTopping/Cheese.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pluralsight/PremiumTopping/Cheese.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +63,9 @@
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Student\Desktop\Pluralsight\Capstones\DELI-CIOUS shop Capstone\Deli-cious-Sandwich-Shop\src\main\java\com\pluralsight\PremiumTopping" />
+    </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="com.pluralsight.FoodTruck" />
     </key>
   </component>
   <component name="RunManager" selected="Application.com.pluralsight.DeliKiosk.Machine.Kiosk">
@@ -122,16 +123,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/pluralsight/DeliKiosk/Machine/KioskOrderUI.java</url>
-          <line>269</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

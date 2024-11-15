@@ -26,6 +26,6 @@ public class Chips extends Order implements IPricable {
 
     @Override
     public double calculatePrice() {
-        return Double.parseDouble(String.valueOf(1.50));
+        return 0;
     }
 }
