@@ -16,11 +16,11 @@ public class Cheese extends PremiumTopping {
     }
 
     @Override
-    public double calculatePrice(String size) {
+    public double calculatePrice(int size) {
         return switch (size) {
-            case "4\"" -> 1.50;
-            case "8\"" -> 2.00;
-            case "12\"" -> 3.00;
+            case 4 -> 1.50;
+            case 8 -> 2.00;
+            case 12 -> 3.00;
             default -> 0;
         };
     }

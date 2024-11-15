@@ -17,12 +17,17 @@ public class Chips extends Order implements IPricable {
     public void setChipName(String chipName) {
         this.chipName = chipName;
     }
-    public void addChips(Chips chips){
-        if (chips != null){
 
+    public void addChips(Chips chips){
+
+        if (chips != null){
+            chips.addChips(chips);
+            System.out.println(chips.getChipName() + "Slurp Your drink has been added!");
+        }else {
+            System.err.println("Invalid Chips Come On");
         }
 
-    }
+   }
 
     @Override
     public double calculatePrice() {

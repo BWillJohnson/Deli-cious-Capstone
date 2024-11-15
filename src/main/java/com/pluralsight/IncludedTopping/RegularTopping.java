@@ -6,7 +6,6 @@ public class RegularTopping extends Topping {
     public RegularTopping(String toppingName) {
         super(toppingName);
     }
-
     public String getRegTopping() {
         return regTopping;
     }
@@ -16,9 +15,13 @@ public class RegularTopping extends Topping {
     }
 
     @Override
-    public double calculatePrice(String size) {
+    public double calculatePrice(int size) {
         return 0;
     }
 
 
+    @Override
+    public String toString() {
+        return  regTopping ;
+    }
 }

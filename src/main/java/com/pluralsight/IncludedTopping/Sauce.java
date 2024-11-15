@@ -14,7 +14,7 @@ public class Sauce extends Topping {
     }
 
     @Override
-    public double calculatePrice(String size) {
+    public double calculatePrice(int size) {
         return 0;
     }
 }

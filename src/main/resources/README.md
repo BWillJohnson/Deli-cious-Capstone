@@ -3,14 +3,9 @@ DELI-CIOUS-SandwichShop
 
 ## Description of the Project
 This project is to be a real life sandwich shop that adds a touch of reality, You can up the size of your sandwich! add Delicious toppings of your choice.
-
-Briefly describe what this Java console application does. Mention its purpose and who the intended users are. Explain the main functionality and what problems it aims to solve.
-
 ![Class Diagram](path/to/your/class_diagram.png)
 
 ## User Stories
-
-List the user stories that guided the development of your application. Format these stories as: "As a [type of user], I want [some goal] so that [some reason]."
 
 - As a Developer, I want to implement a sandwich class within my program.
 - As a Developer, I will need to implement a abstract-toppings parent class.
@@ -47,6 +42,7 @@ Follow these steps to get your application running within IntelliJ IDEA:
 Include screenshots or GIFs that show your application in action. Use tools like [Giphy Capture](https://giphy.com/apps/giphycapture) to record a GIF of your application.
 
 ![Application Screenshot](path/to/your/screenshot.png)
+![img.png](img.png) ![img_1.png](img_1.png) ![img_2.png](img_2.png) ![img_3.png](img_3.png) ![img_4.png](img_4.png)
 
 ## Future Work
 
@@ -64,7 +60,8 @@ List resources such as tutorials, articles, or documentation that helped you dur
 
 ## Team Members
 
-- **Devin** - Support-Advice
+- **Devin** - Support-Advice-Encouragement
+- **Emre** - Support -Advice
 
 ## Thanks
 

@@ -8,12 +8,12 @@ import java.util.List;
 
 public class Sandwich implements IPricable {
     private String breadType;
-    private String sandwichSize;
+    private int sandwichSize;
     private boolean isToasted;
     private final List<Topping> toppings;
 
 
-    public Sandwich(String breadType, String sandwichSize, boolean isToasted) {
+    public Sandwich(String breadType, int sandwichSize, boolean isToasted) {
         this.breadType = breadType;
         this.sandwichSize = sandwichSize;
         this.isToasted = isToasted;
@@ -28,11 +28,11 @@ public class Sandwich implements IPricable {
         this.breadType = breadType;
     }
 
-    public String getSandwichSize() {
+    public int getSandwichSize() {
         return sandwichSize;
     }
 
-    public void setSandwichSize(String sandwichSize) {
+    public void setSandwichSize(int sandwichSize) {
         this.sandwichSize = sandwichSize;
     }
 
@@ -103,6 +103,25 @@ public class Sandwich implements IPricable {
 
     @Override
     public double calculatePrice() {
-        return 0;
+        double sizePrice = 0;
+        if (sandwichSize == 4) {
+            sizePrice = 5.50;
+        } else if (sandwichSize == 8) {
+            sizePrice = 7.00;
+        } else if (sandwichSize == 12) {
+            sizePrice = 8.50;
+        }
+        return sizePrice;
     }
+
+    public double getBasePrice() {
+        double sandPrice = 0;
+        sandPrice += getBasePrice();
+        for (Topping topping : toppings) {
+            sandPrice += topping.getPrice();
+        }
+        return sandPrice;
+    }
+
 }
+

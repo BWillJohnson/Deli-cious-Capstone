@@ -2,15 +2,15 @@ package com.pluralsight.FoodTruck;
 
 import com.pluralsight.KioskInterface.IPricable;
 
-public class Drink implements IPricable {
-    private static final double SMALL_SIZE_PRICE = 2.00;
-    private static final double MEDIUM_SIZE_PRICE = 2.50;
-    private static final double LARGE_SIZE_PRICE = 3.00;
+public class Drink  implements IPricable {
+
+
     private String drinkName;
     private String size;
 
-    public Drink(String drinkName) {
+    public Drink(String drinkName, String size) {
         this.drinkName = drinkName;
+        this.size = size;
     }
 
     public String getDrinkName() {
@@ -46,22 +46,21 @@ public class Drink implements IPricable {
         return false;
         }
     }
+    public void getPrice(){
+
+    }
 
     @Override
     public double calculatePrice() {
         switch (this.size.toLowerCase()) {
-            case "small" -> {
-                return Double.parseDouble(String.valueOf(SMALL_SIZE_PRICE));
-            }
-            case "medium" -> {
-                return Double.parseDouble(String.valueOf(MEDIUM_SIZE_PRICE));
-            }
-            case "large" -> {
-                return Double.parseDouble(String.valueOf(LARGE_SIZE_PRICE));
-            }
-            default -> {
+            case "small":
+                return 2.00;
+            case "medium":
+                return 2.50;
+            case "large":
+                return 3.00;
+            default:
                 return 0;
-            }
         }
 
     }

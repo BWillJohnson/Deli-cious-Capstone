@@ -9,4 +9,11 @@ public abstract class PremiumTopping extends Topping {
     public PremiumTopping(String toppingName) {
         super(toppingName);
     }
+
+    @Override
+    public String toString() {
+        return "PremiumTopping{" +
+                "premiumToppingsName='" + premiumToppingsName + '\'' +
+                '}';
+    }
 }

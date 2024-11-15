@@ -2,7 +2,6 @@ package com.pluralsight.IncludedTopping;
 
 public abstract class Topping {
     private String toppingName;
-    private String category; // premium or regular
     private double price;
 
     public Topping(String toppingName) {
@@ -18,13 +17,6 @@ public abstract class Topping {
         this.toppingName = toppingName;
     }
 
-    public String getCategory() {
-        return category;
-    }
-
-    public void setCategory(String category) {
-        this.category = category;
-    }
 
     public double getPrice() {
         return price;
@@ -34,5 +26,12 @@ public abstract class Topping {
         this.price = price;
     }
 
-    public abstract double calculatePrice(String size);
+    public abstract double calculatePrice(int size);
+
+    @Override
+    public String toString() {
+        return "Topping{" +
+                "toppingName='" + toppingName + '\'' +
+                '}';
+    }
 }

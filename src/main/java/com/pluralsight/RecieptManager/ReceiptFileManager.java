@@ -24,4 +24,5 @@ public class ReceiptFileManager {
         receiptBuilder.append("Date: ").append(formattedDate).append("\n\n\n");
 
     }
+
 }

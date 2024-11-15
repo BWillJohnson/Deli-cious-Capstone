@@ -19,6 +19,12 @@ public class Order implements IPricable {
     public void addSandwich(Sandwich sandwich){
         sandwiches.add(sandwich);
     }
+    public void addChips(Chips chip){
+        chips.add(chip);
+    }
+    public void addDrink(Drink drink){
+        drinks.add(drink);
+    }
 
     public List<Sandwich> getSandwiches() {
         return sandwiches;
@@ -31,14 +37,16 @@ public class Order implements IPricable {
     public List<Chips> getChips() {
         return chips;
     }
-
-
-
     public void checkOut(){
     }
 
     @Override
     public double calculatePrice() {
         return 0;
+    }
+
+    @Override
+    public String toString() {
+        return "Order{" + sandwiches + drinks + chips;
     }
 }
