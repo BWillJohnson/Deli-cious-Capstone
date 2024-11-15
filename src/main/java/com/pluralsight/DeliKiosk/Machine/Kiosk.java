@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Kiosk {
     public static void main(String[] args) {
-        KioskOrderingUI Kiosk = new KioskOrderingUI();
+        KioskOrderUI Kiosk = new KioskOrderUI();
         Scanner scanner= new Scanner(System.in);
         boolean exit = false;
         while (!exit) {

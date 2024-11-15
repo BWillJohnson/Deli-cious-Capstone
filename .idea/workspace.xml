@@ -5,19 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dcf96892-d9b0-4d31-825a-686b07dcce40" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/FoodTruck/Order.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/DeliKiosk/Machine/KioskOrderingUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/DeliKiosk/Machine/KioskOrderingUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/DeliKiosk/Machine/Kiosk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/DeliKiosk/Machine/Kiosk.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/DeliKiosk/Machine/KioskOrderingUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/DeliKiosk/Machine/KioskOrderUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/FoodTruck/Chips.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/FoodTruck/Chips.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/FoodTruck/Drink.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/FoodTruck/Drink.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/FoodTruck/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/FoodTruck/Order.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/FoodTruck/Sandwich.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/FoodTruck/Sandwich.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/PremiumTopping/Cheese.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/PremiumTopping/Cheese.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/PremiumTopping/Meat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/PremiumTopping/Meat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/RecieptManager/RecieptFileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/RecieptManager/ReceiptFileManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/KioskInterface/IPricable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/KioskInterface/IPricable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/RecieptManager/ReceiptFileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/RecieptManager/ReceiptFileManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/pluralsight/DeliKiosk/Machine/Kiosk.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pluralsight/DeliKiosk/Machine/Kiosk.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/pluralsight/DeliKiosk/Machine/KioskOrderingUI.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/pluralsight/FoodTruck/Drink.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pluralsight/FoodTruck/Drink.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/pluralsight/FoodTruck/Sandwich.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pluralsight/FoodTruck/Sandwich.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/pluralsight/PremiumTopping/Cheese.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pluralsight/PremiumTopping/Cheese.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/pluralsight/PremiumTopping/Meat.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pluralsight/PremiumTopping/Meat.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pluralsight/FoodTruck/Chips.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pluralsight/FoodTruck/Chips.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pluralsight/RecieptManager/RecieptFileManager.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +40,10 @@
         <option name="workspaceImportEnabled" value="true" />
       </MavenImportingSettings>
     </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="groupByToolId" value="true" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2of4IQ5TPhLxwu5eWGYo7qwTHFA" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -124,9 +127,9 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/pluralsight/FoodTruck/Drink.java</url>
-          <line>32</line>
-          <option name="timeStamp" value="4" />
+          <url>file://$PROJECT_DIR$/src/main/java/com/pluralsight/DeliKiosk/Machine/KioskOrderUI.java</url>
+          <line>269</line>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

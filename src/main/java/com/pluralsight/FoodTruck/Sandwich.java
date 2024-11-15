@@ -74,7 +74,7 @@ public class Sandwich implements IPricable {
     }
 
     @Override
-    public String calculatePrice() {
+    public double calculatePrice() {
         double basePrice = 0.00;
         if ("4\"".equals(sandwichSize)) {
             basePrice += 5.50;
@@ -94,13 +94,13 @@ public class Sandwich implements IPricable {
         if (isToasted) {
             basePrice += 0.00;
         }
-        return String.format("TotalPrice: $%.2f", basePrice);
+        return Double.parseDouble(String.format("TotalPrice: $%.2f", basePrice));
     }
 
     public void addSauce(Topping sauce) {
         if (sauce != null) {
             toppings.add(sauce);
-            System.out.println(sauce.getToppingName() + "Spicy!...! Your sauce has been added");
+            System.out.println(sauce.getToppingName() + "Your sauce has been added");
         } else {
             System.err.println("Invalid Sauce ");
         }
@@ -116,6 +116,7 @@ public class Sandwich implements IPricable {
             return false;
         }
     }
+
 
     @Override
     public String toString() {

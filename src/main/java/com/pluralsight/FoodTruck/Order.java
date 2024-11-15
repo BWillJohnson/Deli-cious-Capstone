@@ -1,12 +1,14 @@
 package com.pluralsight.FoodTruck;
 
+import com.pluralsight.KioskInterface.IPricable;
+
 import java.util.ArrayList;
 import java.util.List;
 
-public class Order r {
+public class Order implements IPricable {
     private List<Sandwich> sandwiches;
     private List<Drink> drinks;
-    private List<Chips> chips;
+    private final List<Chips> chips;
 
     public Order() {
         this.sandwiches = new ArrayList<>();
@@ -30,14 +32,13 @@ public class Order r {
         return chips;
     }
 
-    public double calculateTotalPrice(){
-        double total = 0;
-        for (Sandwich sandwich : sandwiches) {
-            total += sandwich.calculatePrice();
-        }
-        if (drinks != null) total +=
-    }
+
 
     public void checkOut(){
+    }
+
+    @Override
+    public double calculatePrice() {
+        return Double.parseDouble(null);
     }
 }

@@ -8,17 +8,14 @@ import com.pluralsight.IncludedTopping.RegularTopping;
 import com.pluralsight.IncludedTopping.Sauce;
 import com.pluralsight.PremiumTopping.Cheese;
 import com.pluralsight.PremiumTopping.Meat;
-import com.pluralsight.PremiumTopping.PremiumTopping;
-
-
 import java.util.Scanner;
 
-public class KioskOrderingUI {
+public class KioskOrderUI {
 
-    public Order currentOrder = new Order();
+    public static Order currentOrder = new Order();
     private final Scanner myScan;
 
-    public KioskOrderingUI() {
+    public KioskOrderUI() {
         myScan = new Scanner(System.in);
     }
 
@@ -41,7 +38,7 @@ public class KioskOrderingUI {
                     addSandwichRequest(currentOrder);
                     break;
                 case 2:
-                    addDrinkRequest(currentOrder);
+                   // addDrinkRequest();
                     break;
                 case 3:
                     addChips(currentOrder);
@@ -90,26 +87,16 @@ public class KioskOrderingUI {
             int option = myScan.nextInt();
 
             switch (option) {
-                case 0:
-                    addRegularTopping(customersSandwich);
-                    break;
-                case 1:
-                    addPremiumTopping(customersSandwich);
-                    break;
-                case 2:
-                    addSauce(customersSandwich);
-                    break;
-                case 3:
+                case 0 -> addRegularTopping(customersSandwich);
+                case 1 -> addPremiumTopping(customersSandwich);
+                case 2 -> addSauce(customersSandwich);
+                case 3 -> {
                     System.out.println("\nFinalizing your order. . . . .");
-                    System.out.println("The Total price: " + currentOrder.calculateTotalPrice());
+                    System.out.println("The Total price: " + currentOrder.calculatePrice());
                     exit = true;
-                    break;
-                case 4:
-                    exit = true;
-                    break;
-                default:
-                    System.err.println("Notice Invalid option! Please enter a corresponding number!");
-                    break;
+                }
+                case 4 -> exit = true;
+                default -> System.err.println("Notice Invalid option! Please enter a corresponding number!");
             }
         }
     }
@@ -123,6 +110,7 @@ public class KioskOrderingUI {
             System.out.println("3. Pickles");
             System.out.println("4. Onions");
             System.out.println("5. Mushrooms");
+            System.out.println("6. Exit");
             int choice = myScan.nextInt();
 
             switch (choice) {
@@ -158,18 +146,18 @@ public class KioskOrderingUI {
     public void addPremiumTopping(Sandwich sandwich) {
         boolean exit = false;
         while (!exit) {
-            System.out.println("\nWould you like to add a meat or cheese?");
+            System.out.println("\nWould you like to add a meat or cheese topping?");
             System.out.println("1. Add a Meat topping");
             System.out.println("2. Add a Cheese topping");
-            System.out.println("x. Exit premium toppings");
+            System.out.println("0. Exit premium toppings");
 
-            String choice = myScan.nextLine().trim().toLowerCase();
+            int choice = myScan.nextInt();
 
             switch (choice) {
-                case "1" -> addMeatTopping(sandwich);
-                case "2" -> addCheeseTopping(sandwich);
-                case "x" -> exit = true;
-                default -> System.err.println("Invalid choice! Please choose 1, 2, or x to exit.");
+                case 1 -> addMeatTopping(sandwich);
+                case 2 -> addCheeseTopping(sandwich);
+                case 0 -> exit = true;
+                default -> System.err.println("Invalid choice! Please choose 1, 2, or 0 to exit.");
             }
         }
     }
@@ -246,36 +234,36 @@ public class KioskOrderingUI {
             System.out.println("3. Ketchup");
             System.out.println("4. SpicyMustard");
             System.out.println("5. BBQ");
-            System.out.println("x. Exit sauces");
+            System.out.println("0. Exit sauces");
 
-            String response = myScan.nextLine();
+            int response = myScan.nextInt();
 
             switch (response) {
-                case "1" -> {
+                case 1 -> {
                     sandwich.addSauce(new Sauce("Mayo"));
                     System.out.println("Mayo added!");
                 }
-                case "2" -> {
+                case 2 -> {
                     sandwich.addSauce(new Sauce("Mustard"));
                     System.out.println("Mustard added!");
                 }
-                case "3" -> {
+                case 3 -> {
                     sandwich.addSauce(new Sauce("Ketchup"));
                     System.out.println("Ketchup added!");
                 }
-                case "4" -> {
+                case 4 -> {
                     sandwich.addSauce(new Sauce("Spicy Mustard"));
                     System.out.println("Spicy Mustard added!");
                 }
-                case "5" -> {
+                case 5 -> {
                     sandwich.addSauce(new Sauce("BBQ"));
                     System.out.println("BBQ added!");
                 }
-                case "x" -> {
+                case 0 -> {
                     exit = true;
                     System.out.println("Exiting sauces menu.");
                 }
-                default -> System.err.println("Notice! Invalid choice 1-5 or X for exit please.");
+                default -> System.err.println("Notice! Invalid choice 1-5 or 0 for exit please.");
             }
         }
 
@@ -288,35 +276,35 @@ public class KioskOrderingUI {
             System.out.println("2. Sprite");
             System.out.println("3. Water");
             System.out.println("x. Exit");
-            System.out.println("Please choose a drink 1-3 or x to exit");
+            System.out.println("Please choose a drink 1-3 or 0 to exit");
 
-            String choice = myScan.nextLine().trim().toLowerCase();
+           int choice = myScan.nextInt();
 
             switch (choice) {
-                case "1" -> {
+                case 1 -> {
                     drink.addDrink(new Drink("Coke"));
                     System.out.println("You chose Coke!");
                 }
-                case "2" -> {
+                case 2 -> {
                     drink.addDrink(new Drink("Sprite"));
                     System.out.println("You chose Sprite!");
                 }
-                case "3" -> {
+                case 3 -> {
                     drink.addDrink(new Drink("Water"));
                     System.out.println("You chose Water!");
                 }
-                case "x" -> {
+                case 0 -> {
                     leave = true;
                     System.out.println("Exiting...");
                 }
-                default -> System.err.println("Invalid choice! only pick 1-3 or exit with x.");
+                default -> System.err.println("Invalid choice! only pick 1-3 or exit with 0.");
             }
         }
 
     }
 
 
-    public void addChips(Chips chips) {
+    public void addChips(Order chips) {
         boolean found = false;
         while (!found) {
             System.out.println("\nTake a look at our chip selection!");
@@ -326,30 +314,30 @@ public class KioskOrderingUI {
             System.out.println("4, HotFries");
             System.out.println("5. Popcorn");
             System.out.println("0. Exiting.....");
-            String customerChoice = myScan.nextLine().toLowerCase().trim();
+            int customerChoice = myScan.nextInt();
 
             switch (customerChoice) {
-                case "1" -> {
-                    chips.setTypeOfChips("Lays Potato Chips!");
+                case 1 -> {
+
                     System.out.println("You chose Lays Potato Chips!");
                 }
-                case "2" -> {
-                    chips.setTypeOfChips("Salt&Vinegar Chips!");
+                case 2 -> {
+                    //
                     System.out.println("You chose Salt&Vinegar Chips!");
                 }
-                case "3" -> {
-                    chips.setTypeOfChips("Pork-rinds");
+                case 3 -> {
+                   //
                     System.out.println("You chose Pork-rinds");
                 }
-                case "4" -> {
-                    chips.setTypeOfChips(" HotFries");
+                case 4 -> {
+                   //
                     System.out.println("You chose HotFries");
                 }
-                case "5" -> {
-                    chips.setTypeOfChips("Popcorn");
+                case 5 -> {
+                    //
                     System.out.println("You chose Popcorn");
                 }
-                case "0" -> {
+                case 6 -> {
                     found = true;
                     System.out.println("Heading back to option menu");
                 }
@@ -373,7 +361,7 @@ public class KioskOrderingUI {
             Chips chips = currentOrder.getChips().get(0);
             System.out.println(chips + " :Bag Price: $" + chips.calculatePrice());
         }
-        double priceDue = currentOrder.calculateTotalPrice();
+        double priceDue = currentOrder.calculatePrice();
         System.out.println("Total: $" + priceDue);
         System.out.println("Thank you for coming to our foodTruck!!");
 

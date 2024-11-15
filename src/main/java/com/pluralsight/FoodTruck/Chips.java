@@ -2,24 +2,30 @@ package com.pluralsight.FoodTruck;
 
 import com.pluralsight.KioskInterface.IPricable;
 
-public class Chips implements IPricable {
-    private String typeOfChips;
+public class Chips extends Order implements IPricable {
 
-    public Chips(String typeOfChips) {
-        this.typeOfChips = typeOfChips;
+    private String chipName;
+
+    public Chips(String chips) {
+        this.chipName = chips;
     }
 
-    public String getTypeOfChips() {
-        return typeOfChips;
+    public String getChipName() {
+        return chipName;
     }
 
-    public void setTypeOfChips(String typeOfChips) {
-        this.typeOfChips = typeOfChips;
+    public void setChipName(String chipName) {
+        this.chipName = chipName;
     }
+    public void addChips(Chips chips){
+        if (chips != null){
 
+        }
+
+    }
 
     @Override
-    public String calculatePrice() {
-        return String.valueOf(1.50);
+    public double calculatePrice() {
+        return Double.parseDouble(String.valueOf(1.50));
     }
 }

@@ -48,19 +48,19 @@ public class Drink implements IPricable {
     }
 
     @Override
-    public String calculatePrice() {
+    public double calculatePrice() {
         switch (this.size.toLowerCase()) {
             case "small" -> {
-                return String.valueOf(SMALL_SIZE_PRICE);
+                return Double.parseDouble(String.valueOf(SMALL_SIZE_PRICE));
             }
             case "medium" -> {
-                return String.valueOf(MEDIUM_SIZE_PRICE);
+                return Double.parseDouble(String.valueOf(MEDIUM_SIZE_PRICE));
             }
             case "large" -> {
-                return  String.valueOf(LARGE_SIZE_PRICE);
+                return Double.parseDouble(String.valueOf(LARGE_SIZE_PRICE));
             }
             default -> {
-                return String.valueOf(0);
+                return Double.parseDouble(String.valueOf(0));
             }
         }
 
